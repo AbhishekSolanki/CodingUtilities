@@ -22,4 +22,9 @@ public class TestWcapp {
     public void countLinesTest() {
         Assert.assertEquals(7145,wc.countLines(test_file));
     }
+
+    @Test
+    public void countWordsTest() {
+        Assert.assertEquals(60127,wc.countWords(test_file));
+    }
 }

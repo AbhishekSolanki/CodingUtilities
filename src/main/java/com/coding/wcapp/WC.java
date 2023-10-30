@@ -37,11 +37,27 @@ public class WC implements IWC {
     }
 
     public long countCharacter(String file) {
-        return 0;
+        try {
+            BufferedReader bufferedReader = new BufferedReader(new FileReader(file));
+            int characters = 0;
+            while(bufferedReader.ready()) characters += bufferedReader.readLine().toCharArray().length;
+            return characters;
+        } catch (Exception e){
+            e.printStackTrace();
+            return -1;
+        }
     }
 
     public long countWords(String file) {
-        return 0;
+        try {
+            BufferedReader bufferedReader = new BufferedReader(new FileReader(file));
+            int words = 0;
+            while(bufferedReader.ready()) words += bufferedReader.readLine().split(" ").length;
+            return words;
+        } catch (Exception e){
+            e.printStackTrace();
+            return -1;
+        }
     }
 }
 

@@ -26,6 +26,12 @@ public class Main {
                 if (option == "l") {
                     System.out.println("lines: " + wc.countLines(file));
                 }
+                if (option == "w") {
+                    System.out.println("words: " + wc.countWords(file));
+                }
+                if (option == "m") {
+                    System.out.println("characters: " + wc.countCharacter(file));
+                }
             }
         }
 

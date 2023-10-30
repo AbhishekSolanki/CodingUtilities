@@ -14,6 +14,8 @@ public class WCArgument {
         arguments = new ArrayList<Argument>();
         arguments.add(new Argument("c","countbytes",false,"bytes of files")); // list of arguments progam expects
         arguments.add(new Argument("l","countlines",false,"number of lines in a file")); // list of arguments progam expects
+        arguments.add(new Argument("m","countcharacters",false,"number of charaters in a file"));
+        arguments.add(new Argument("w","countwords",false,"number of words in a file"));
         //CLIArgumentParser parser = Utility.setArguments(arguments,arg); // parse and load arguments
     }
 
